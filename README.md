@@ -9,7 +9,7 @@ configured.
   - [Arch](#arch)(native or Manjaro)
   - [Other](#other-linux-distribution)
   - [Windows](#windows-wsl)
-- [ZSH](#zsh)
+- [Setup](#setup)
 - [Extra WSL 1 and WSL 2 steps](#extra-wsl-1-and-wsl-2-steps)
 - [FAQ](#faq)
   - [How to personalize these dotfiles?](#how-to-personalize-these-dotfiles)
@@ -29,12 +29,26 @@ requirements are met we are good to go.
 We are going to use terminator and zsh as default shell in 
 order to get proper theming and extended functionallity
 
-#### Arch
+## Arch
 
 If you are running base Arch, you'll want to install yay for
 managing packages.
 
-##### Manjaro 20.2 Nibia
+### Manjaro 20.2 Nibia
+
+#### zsh
+
+I'll be using ZSH and [powerlevel10k](https://github.com/romkatv/powerlevel10k) for cool theme.
+
+```sh
+# Install zsh first
+yay -S zsh
+```
+
+Finish the conversion by changing your user in /etc/passwd to /bin/zsh instead of /bin/bash
+
+or typing `chsh $USER` and entering `/bin/zsh`
+
 
 ```sh
 # Run this befor movin on.
@@ -53,13 +67,16 @@ sudo yay -S \
   ripgrep
 ```
 
-#### Other Linux distros
+### Other Linux distros
 If you're using Debian or Ubuntu that's ok. You can change
 the `yay -S` commands above for `apt` command. Just be mindfull
 you might have to add the proper "ppa" repository to install 
 some packages or compile it from source.
 
-#### Windows WSL
+### Windows WSL
+
+First follow the next steps and once your Linux Subsystem for Windows is up and Running you can 
+install all the dependencies we saw previously. 
 
 [Source Article](https://docs.microsoft.com/en-us/windows/wsl/install-win10) 
 I copy these because Microsoft is notorious for changing URLs
@@ -116,16 +133,14 @@ the following msi file:
 
 Open the Microsoft Store and select your favorite Linux distribution.
 
-#### Install New Windows Terminal
+##### Install New Windows Terminal
 
 Follow the instructions as per the following site:
 [https://github.com/microsoft/terminal](https://github.com/microsoft/terminal)
 
-## zsh
-
-I'll be using ZSH and [powerlevel10k](https://github.com/romkatv/powerlevel10k) for cool theme.
-
 ### Setup
+
+Once we are on ZSH and installed all the dependencies we can move forward setting the dotfiles.
 
 ```
 touch "$HOME/.cache/zshhistory"
@@ -133,10 +148,6 @@ touch "$HOME/.cache/zshhistory"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 ```
-
-Finish the conversion by changing your user in /etc/passwd to /bin/zsh instead of /bin/bash
-
-or typing `chsh $USER` and entering `/bin/zsh`
 
 #### Install these dotfiles and various tools on your system
 

@@ -138,7 +138,7 @@ Open the Microsoft Store and select your favorite Linux distribution.
 Follow the instructions as per the following site:
 [https://github.com/microsoft/terminal](https://github.com/microsoft/terminal)
 
-### Setup
+## Setup
 
 Once we are on ZSH and installed all the dependencies we can move forward setting the dotfiles.
 
@@ -149,7 +149,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
 ```
 
-#### Install these dotfiles and various tools on your system
+### Install these dotfiles and various tools on your system
 
 ```sh
 # Clone down this dotfiles repo to your home directory. Feel free to place
@@ -209,7 +209,7 @@ asdf global ruby 2.7.1
 pip install --user ansible
 ```
 
-#### Install plugins for Vim and tmux
+### Install plugins for Vim and tmux
 
 ```sh
 # Open Vim and install the configured plugins. You would type in the
@@ -221,6 +221,7 @@ vim .
 # ` followed by I (capital i) to issue the command.
 tmux
 `I
+```
 
 #### Optionally confirm that a few things work after closing and re-opening your terminal
 

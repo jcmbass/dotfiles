@@ -64,7 +64,9 @@ sudo yay -S \
   autojump \
   zsh-autosuggestions \
   fzf \
-  ripgrep
+  ripgrep \
+  nodejs \
+  npm
 ```
 
 ### Other Linux distros

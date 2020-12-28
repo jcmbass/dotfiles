@@ -168,12 +168,13 @@ git clone https://github.com/jcmbass/dotfiles ~/dotfiles
 # then adjust the ln -s symlink source (left side) to where you cloned it.
 #
 # NOTE: The last one is WSL 1 / 2 specific. Don't do it on native Linux / macOS.
-mkdir -p ~/zsh && mkdir -p ~/.local/bin && mkdir -p ~/.vim/spell \
+mkdir -p ~/zsh && mkdir -p ~/.local/bin && mkdir -p ~/.vim/spell && mkdir -p ~/.config/fusuma/ \
   && ln -s ~/dotfiles/zsh/aliasrc ~/zsh/aliasrc \
   && ln -s ~/dotfiles/.gitconfig ~/.gitconfig \
   && ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf \
   && ln -s ~/dotfiles/.vimrc ~/.vimrc \
   && ln -s ~/dotfiles/.vim/spell/en.utf-8.add ~/.vim/spell/en.utf-8.add \
+  && ln -s ~/dotfiles/.config/fusuma/config.yml ~/.config/fusuma/config.yml \ 
   && sudo ln -s ~/dotfiles/etc/wsl.conf /etc/wsl.conf
 
 # Create your own personal ~/.gitconfig.user file. After copying the file,

@@ -65,9 +65,15 @@ sudo yay -S \
   zsh-autosuggestions \
   fzf \
   ripgrep \
-  nodejs \
-  npm
+  nodejs \    # javascript
+  npm         # javascript packages
 ```
+
+###### macOS like gestures
+
+If you like to have macOS gestures on Linux. It can be achieve with [Fusuma](https://github.com/iberianpig/fusuma)
+
+read carefully to correctly implement on your linux distros.
 
 ### Other Linux distros
 If you're using Debian or Ubuntu that's ok. You can change

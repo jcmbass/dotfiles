@@ -198,6 +198,8 @@ bash ~/.asdf/plugins/nodejs/bin/import-release-team-keyring
 asdf install nodejs 12.18.3
 asdf global nodejs 12.18.3
 
+# Install expo for React Native development
+npm Install --global expo-cli
 # Install Yarn.
 npm install --global yarn
 

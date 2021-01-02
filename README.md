@@ -230,6 +230,16 @@ vim .
 # ` followed by I (capital i) to issue the command.
 tmux
 `I
+
+# Swaping Escape key on your keyboard for the CapsLk key can be helpfull if you
+# decide to use Vim as text editor.
+# This can be easly done in Arch Linux by simply changing the Xorg.configutaion
+# and changin system-wide configutaion by adding the next line to
+# /etc/X11/xorg.conf.d/00-keyboard.conf 
+
+  Option "XkbOptions" "caps:escape_shifted_capslock"
+
+# Read your linux distro documentation to be sure the proper configutaion method
 ```
 
 #### Optionally confirm that a few things work after closing and re-opening your terminal

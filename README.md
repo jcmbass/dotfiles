@@ -55,6 +55,7 @@ or typing `chsh $USER` and entering `/bin/zsh`
 sudo yay -S \
   tmux \
   vim \
+  bpytop \    # better htop
   terminator \
   autojump \
   chromium \

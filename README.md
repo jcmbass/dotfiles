@@ -56,6 +56,7 @@ sudo yay -S \
   tmux \
   vim \
   bpytop \    # better htop
+  signal-desktop \
   terminator \
   autojump \
   chromium \

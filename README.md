@@ -204,6 +204,8 @@ asdf global nodejs 12.18.3
 npm Install --global expo-cli
 # Install Yarn.
 npm install --global yarn
+# Install react-devtools
+npm install -g react-devtools
 
 # Install system dependencies for Ruby on Debian / Ubuntu.
 #
